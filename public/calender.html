@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calender | MeetingsApp</title>
+    <link rel="stylesheet" href="./external/normalize.css/normalize.css" />
+    <link
+      rel="stylesheet"
+      href="./external/@fortawesome/fontawesome-free/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./css/utils.css" />
+    <link rel="stylesheet" href="./css/nav.css" />
+    <link rel="stylesheet" href="./css/calender.css">
+  </head>
+  <body>
+    <header>
+    <nav>
+      <div class="nav-container container">
+        <ul class="list-unstyled menu">
+          <li class="d-lg-none header-mobile">
+            <span>My Meetings</span>
+            <button id="menu-button"><i class="fa-solid fa-bars"></i></button>
+          </li>
+          <li class="li-hover nav-items">
+            <a class="link-plain" href="./calender.html">Calender</a>
+          </li>
+          <li class="nav-items">
+            <a class="link-plain" href="./meetings.html">Meetings</a>
+          </li>
+          <li class="nav-items">
+            <a class="link-plain" href="./teams.html">Teams</a>
+          </li>
+        </ul>
+        <div class="nav-right-content nav-items">
+          <span class="pl-2"
+            >Hello <a href="#" id="name-local"></a></span
+          >
+          <span><a class="link-plain pl-2" href="#" id="logout">Logout</a></span>
+        </div>
+      </div>
+    </nav>
+    </header>
+    <main class="container-box">
+        <h1>Calender</h1>
+        <hr>
+        <div class="date-time-box">
+            <div>
+                <span class="ft-s-1" id="date-show">12 September 2020</span><br>
+                <span class="lighter" id="day-show">Saturday</span>
+            </div>
+            <div>
+                <input id="date-field" class="input-field" type="date" onchange="dateSelect(event)"/>
+            </div>
+        </div>
+
+        <section  style="position:relative">
+         <div class="hour-box">
+            <span class="pr-2 hour-box-number">0</span> <div class="hour-box-space"></div>
+         </div>
+            
+             <div class="hour-box">
+                <span class="pr-2 hour-box-number">1</span> <div class="hour-box-space"></div>
+             </div>
+           
+           
+             <div class="hour-box">
+                <span class="pr-2 hour-box-number">2</span> <div class="hour-box-space"></div>
+             </div>
+            
+             <div class="hour-box">
+                <span class="pr-2 hour-box-number">3</span> <div class="hour-box-space"></div>
+             </div>
+             <div class="hour-box">
+                <span class="pr-2 hour-box-number">4</span> <div class="hour-box-space"></div>
+             </div>
+             <div class="hour-box">
+                <span class="pr-2 hour-box-number">5</span> <div class="hour-box-space"></div>
+             </div>
+             <div class="hour-box">
+                <span class="pr-2 hour-box-number">6</span> <div class="hour-box-space"></div>
+             </div>
+             <div class="hour-box">
+                <span class="pr-2 hour-box-number">7</span> <div class="hour-box-space"></div>
+             </div>
+             <div class="hour-box">
+                <span class="pr-2 hour-box-number">8</span> <div class="hour-box-space"></div>
+             </div>
+             <div class="hour-box">
+                <span class="pr-2 hour-box-number">9</span> <div class="hour-box-space"></div>
+             </div>
+             <div class="hour-box">
+                <span class="pr-2 hour-box-number">10</span> <div class="hour-box-space"></div>
+             </div>
+             <div class="hour-box">
+                <span class="pr-2 hour-box-number">11</span> <div class="hour-box-space"></div>
+             </div>
+             <div class="hour-box">
+                <span class="pr-2 hour-box-number">12</span> <div class="hour-box-space"></div>
+             </div>
+             <div class="hour-box">
+                <span class="pr-2 hour-box-number">13</span> <div class="hour-box-space"></div>
+             </div>
+             <div class="hour-box">
+                <span class="pr-2 hour-box-number">14</span> <div class="hour-box-space"></div>
+             </div>
+             <div class="hour-box">
+                <span class="pr-2 hour-box-number">15</span> <div class="hour-box-space"></div>
+             </div>
+             <div class="hour-box">
+                <span class="pr-2 hour-box-number">16</span> <div class="hour-box-space"></div>
+             </div>
+             <div class="hour-box">
+                <span class="pr-2 hour-box-number">17</span> <div class="hour-box-space"></div>
+             </div>
+             <div class="hour-box">
+                <span class="pr-2 hour-box-number">18</span> <div class="hour-box-space"></div>
+             </div>
+             <div class="hour-box">
+                <span class="pr-2 hour-box-number">19</span> <div class="hour-box-space"></div>
+             </div>
+             <div class="hour-box">
+                <span class="pr-2 hour-box-number">20</span> <div class="hour-box-space"></div>
+             </div>
+             <div class="hour-box">
+                <span class="pr-2 hour-box-number">22</span> <div class="hour-box-space"></div>
+             </div>
+             <div class="hour-box">
+                <span class="pr-2 hour-box-number">23</span> <div class="hour-box-space"></div>
+             </div>
+
+
+
+                <div id="show-meetings-container"> 
+                    <!-- <div class="meeting meeting-1">
+                        <span>React Js Session</span><br>
+                        <span>Time Duration 1hr</span>
+                    
+                    </div> -->
+                </div>
+        </section>
+    </main>
+
+
+    <script src="./js/nav.js" type="module"></script>
+    <script src="./js/pages/calender.js"></script>
+  </body>
+</html>

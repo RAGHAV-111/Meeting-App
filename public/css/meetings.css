@@ -1,0 +1,60 @@
+.nav-filter-add-meeting{
+    display: flex;
+    border-bottom: 1px solid grey;
+    border-radius: 3px;
+}
+.filter-meetings{
+    border: 1px solid grey;
+    border-bottom: none;
+    border-right: none;
+    padding: 1rem;
+    font-size: 1rem;
+    border-radius: 3px;
+    cursor: pointer;
+    color: blue;
+}
+.add-meetings{
+    border: 1px solid gray;
+    border-bottom: none;
+    padding: 1rem;
+    font-size: 1rem;
+    border-radius: 3px;
+    cursor: pointer;
+}
+.date-dropdown{
+    width: 100%;
+    border-radius: 3px;
+}
+.form-meeting{
+    background-color: lightskyblue;
+    border-radius: 3px;
+    padding: 1rem;
+}
+.form-meeting h2{
+    color: #ffff;
+    border-bottom: 0.5px solid gray;
+    padding-bottom: 0.75rem;
+}
+.meetings-matching-box{
+    border: 0.5px solid gray;
+    border-radius: 5px;
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+.meetings-matching-box span{
+    display: inline-block;
+    margin-bottom: 0.5rem;
+}
+.form-descript{
+    color: #ffff;
+    font-size: 0.9rem;
+}
+#new-meetings{
+    display: none;
+}
+#search-for-meetings{
+    display: block;
+}
+/* .meetings-matching-box input{
+    border: none;
+} */

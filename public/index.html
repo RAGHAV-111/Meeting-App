@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Meeting App</title>
+    <link rel="stylesheet" href="./external/normalize.css/normalize.css" />
+    <link
+      rel="stylesheet"
+      href="./external/@fortawesome/fontawesome-free/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./css/utils.css" />
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/nav.css" />
+  </head>
+  <body>
+    <!-- <nav>
+      <div class="nav-container container">
+        <ul class="list-unstyled menu">
+          <li class="d-lg-none header-mobile">
+            <span>My Meetings</span>
+            <button id="menu-button"><i class="fa-solid fa-bars"></i></button>
+          </li>
+          <li class="li-hover nav-items">
+            <a class="link-plain" href="/">Calender</a>
+          </li>
+          <li class="nav-items">
+            <a class="link-plain" href="./meetings.html">Meetings</a>
+          </li>
+          <li class="nav-items">
+            <a class="link-plain" href="./teams.html">Teams</a>
+          </li>
+        </ul>
+        <div class="nav-right-content nav-items">
+          <span class="pl-2"
+            >Hello <a href="#">shubh410shekhar@gmail.com</a></span
+          >
+          <span><a class="link-plain pl-2" href="#">Logout</a></span>
+        </div>
+      </div>
+    </nav> -->
+    <main>
+    <form class="form-container" id="register-form">
+      <i class="fa-6x fa-solid fa-user-plus"></i>
+      <p>Register It And Schedule Your First Meeting 🧑‍💻</p>
+      <hr>
+      <div class="mb-2 f-b ft-s-1">
+        <label for="name">Name:</label>
+      </div>
+      <div class="mb-3">
+        <input class="w-full p-3" type="text" id="name" placeholder="Enter Your Name"/>
+        <span id="name-alert" class="danger"></span>
+      </div>
+      <div class="mb-2 f-b ft-s-1">
+        <label for="email">Email:</label>
+      </div>
+      <div class="mb-3">
+        <input class="w-full p-3" type="email" id="email" placeholder="Enter Your Email"/>
+        <span id="email-alert" class="danger"></span>
+      </div>
+      <div class="mb-2 f-b ft-s-1">
+        <label for="password">Password:</label>
+      </div>
+      <div class="mb-3">
+        <input class="w-full p-3" type="password" id="password" placeholder="Enter Your Password"/>
+        <span id="password-alert" class="danger"></span>
+      </div>
+      <div class="mb-2 f-b ft-s-1">
+        <label for="cpassword">Confirm Password:</label>
+      </div>
+      <div class="mb-3">
+        <input class="w-full p-3" type="password" id="cpassword" placeholder="Confirm Your Password"/>
+        <span id="cpassword-alert" class="danger"></span>
+      </div>
+      <button class="btn btn-primary w-full" id="submit" type="submit"><a class="link-plain w-color">Submit</a></button>
+      <div>Already Have a account ? <a href="./login.html">Login</a></div>
+
+    </form>
+    </main>
+    <!-- <script src="./js/nav.js"></script> -->
+    <script src="./js/pages/register.js" type="module"></script>
+  </body>
+</html>
